@@ -4,4 +4,7 @@ Kullanıcıya bir zorluk seviyesi seçtirir ve bu seviyeye bağlı olarak bir ke
 
 ArraySettings sınıfı ise, bir dize ve bir karakter dizisi alan arraySettings1 metodunu içerir. Bu metod, aldığı dizedeki her karakteri alınan karakter dizisine kopyalar. Yani, Main sınıfındaki kullanımıyla, seçilen kelimenin karakterlerini bir karakter dizisine kopyalamak için kullanılır.
 
-##Birlikte bu iki sınıf, bir kelime tahmin oyununun temel işlevselliğini sağlar. Main sınıfı oyunun akışını kontrol ederken, ArraySettings sınıfı ise gerekli yardımcı işlemleri gerçekleştirir.
+Birlikte bu iki sınıf, bir kelime tahmin oyununun temel işlevselliğini sağlar. Main sınıfı oyunun akışını kontrol ederken, ArraySettings sınıfı ise gerekli yardımcı işlemleri gerçekleştirir.
+
+Not: Reels üzerinde hata olarak anlaşılan kısım 21. satırdaki newClue isimli String tanımı new ile değil zaten tanımlanmış olan clue nin hafıza adresi üzerinden yapmamızı öneriyor derleyici,
+bu bir error değil warning, dini anlamdaki vacip gibi yaparsan iyi olur kısmında daha çok. Doğru kullanımı şu şekilde olmalıydı "String newClue = clue[difficulty];"
